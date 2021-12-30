@@ -212,35 +212,40 @@ p {
   padding: 5px;
 }
 
-/*contact section style*/
+/*Projects section style*/
+
+.image-shop-picture {
+  float: left;
+  margin-right: 20px;
+  object-fit: cover;
+  max-width: 700px;
+}
 
 .content-wrapper {
+  margin-top: 50px;
+}
+
+/* .content-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "left-column-c" "right-column-c";
+  grid-template-areas:
+    "text" "image"
+    "text" "text";
 }
 
-.left-column-c {
-  grid-area: left-column-c;
+.text {
+  grid-area: text;
 }
 
-.right-column-c {
-  grid-area: right-column-c;
+.image {
+  grid-area: image;
   margin-left: 50px;
 }
 
 .contact-text {
   padding-right: 100px;
   margin-top: 30px;
-}
-
-#story-pic-2 {
-  display: block;
-  margin: 0 auto;
-  height: 200px;
-  width: 200px;
-  object-fit: cover;
-}
+} */
 
 @media screen and (max-width: 1200px) {
   .main-container {
@@ -256,3 +261,5 @@ p {
       "right-column-c";
   }
 }
+
+/*my projects section*/
