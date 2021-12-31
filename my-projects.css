@@ -215,14 +215,18 @@ p {
 /*Projects section style*/
 
 .image-shop-picture {
-  float: left;
-  margin-right: 20px;
   object-fit: cover;
-  max-width: 700px;
+  max-width: 900px;
 }
 
+.pic-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .content-wrapper {
   margin-top: 50px;
+  font-size: 22px;
 }
 
 /* .content-wrapper {
