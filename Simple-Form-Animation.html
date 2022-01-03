@@ -30,23 +30,49 @@
             </div>
             <div class="content-wrapper">
                 <div class="pic-div" ><img class="image-shop-picture" src="./img/blue_page.PNG"></div>
-                <p>At first I managed to complete the HTML layout of the site using divs.
-                    There are search box, hero, carousel and the footer. With the help of CSS,
-                    a background image was set in the body (the penguin picture).
-                    Using JavaScript, this simple website now have functionality.
-                    User can change the picture by the left and right arrow of
-                    the carousel in the middle of the page. For this, the Translate
-                    method was used alongside with the transform property which
-                    basically applies a 2D or 3D transformation to an element.
-                    However, the aforementioned property was used for moving
-                    the picture to the left and right.
+                <p>The user must enter his username. If the username is correct the webpage
+                    background will remain blue, but if it is wrong the background will be
+                    turn into red, in this case all usernames are considered correct
+                    providing they have more than 7 characters.
+                    This is a login form with animation. The HTML file is rather a simple
+                    form layout, and most of the job has been done in CSS and JavaScript.
+                    The whole project consists of 4 layers namely:
                 </p>
-                <h3>Technologies used in this project:</h3>
                 <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
+                    <li>field-name</li>
+                    <li>field-email</li>
+                    <li>field-password</li>
+                    <li>field-finished</li>
                 </ul>
+                <p>In each field some icons from fond awesome website has been included.
+                    There are arrow, email, key and heart icon. We want to put all these
+                    field on top of each other and to do this we must first set the body to:</p>
+                <pre>
+                    <code style="color: white;">
+                        {
+                            Position: relative;
+                        }
+                    </code>
+                </pre>
+                <p>And then set all fields to:</p>
+                <pre>
+                    <code style="color: white;">
+                        {
+                            Position: absolute;
+                            Top:50%;
+                            Left:50%;
+                        }
+                        
+                    </code>
+                </pre>
+                <p>In JavaScript file we make some methods, one of which select the arrows and
+                    attaching an event listener to each arrow to check whether the information
+                    that the user is providing is valid or not. If the information are valid
+                    the user can proceed to the next page, otherwise the page turns into red
+                    and shakes. So as you see below the validation check has been failed
+                    because the input character is less than 7 character and the background turned into red.</p>
+                <div class="pic-div" ><img class="image-shop-picture" src="./img/red_page.PNG"></div>
+
                 <p>To see the codes of this project, please see
                     <a target="_blank"
                     href="https://github.com/KAD105/Javascript-Simple-Form-Animation">
