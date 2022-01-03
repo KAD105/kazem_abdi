@@ -229,12 +229,14 @@ p {
   font-size: 22px;
 }
 
-/* .content-wrapper {
+/* Contacts */
+.content-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
     "text" "image"
     "text" "text";
+  grid-column-gap: 100px;
 }
 
 .text {
@@ -246,10 +248,15 @@ p {
   margin-left: 50px;
 }
 
+.text,
+p {
+  text-align: left;
+}
+
 .contact-text {
   padding-right: 100px;
   margin-top: 30px;
-} */
+}
 
 @media screen and (max-width: 1200px) {
   .main-container {
