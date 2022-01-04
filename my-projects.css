@@ -55,24 +55,6 @@ h6 {
   font-size: 16px;
 }
 
-#a-4:hover,
-a:active {
-  text-decoration: underline;
-  color: #eb3d08;
-}
-
-#a-5:hover,
-a:active {
-  text-decoration: underline;
-  color: greenyellow;
-}
-
-#a-6:hover,
-a:active {
-  text-decoration: underline;
-  color: #e312c7;
-}
-
 #story-wrapper {
   display: grid;
   background-color: var(--minorColor);
@@ -147,6 +129,11 @@ a {
   color: rgb(19, 190, 247);
 }
 
+a:hover {
+  text-decoration: underline;
+  color: yellow;
+}
+
 .cards {
   display: grid;
 
@@ -182,6 +169,12 @@ a {
 
 .cord-text {
   grid-area: text;
+}
+
+.certificates {
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 #footer-wrapper {
